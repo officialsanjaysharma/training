@@ -1,4 +1,5 @@
 body {
+  /* Body Style */
   position: absolute;
   width: 100%;
   height: 100%;
@@ -6,7 +7,9 @@ body {
   background-color: #f4511e;
 }
 
+
 .footer {
+  /* Common css for flex */
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -14,20 +17,14 @@ body {
 }
 
 .flexContainer {
+  /* Flex Container */
   display: flex;
   flex-wrap: nowrap;
   background-color: DodgerBlue;
 }
 
-.flexContainer > div {
-  background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-}
 .flexContainer > a {
+  /* Styling for container */
   background-color: #f1f1f1;
   width: 100px;
   margin: 10px;
@@ -37,6 +34,7 @@ body {
 }
 
 .fa {
+  /* Social Media icons common style */
   padding: 23px;
   display: flex;
   flex: wrap;
@@ -48,6 +46,7 @@ body {
 }
 
 .fa:hover {
+  /* To hover over image */
   opacity: 0.7;
 }
 
@@ -122,52 +121,43 @@ body {
 }
 
 .heroImage {
+  /* Hero Image Style */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://sakhideshmukh26.files.wordpress.com/2013/05/taj-mahal-wallpapers-41.jpg");
+    url("/images/taj-mahal-wallpapers-41.jpg");
   height: 100%;
   width: 100%;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
-
-
-
 .topnav a:hover {
+  /* To hover over image */
   color: orangered;
 }
 
 .topnav .icon {
+  /* icon will visible when website screen shrink i.e for smaller devices */
   display: none;
   float: right;
-
-
-  
 }
+
 
 /* 4k+ display */
 @media only screen and (max-width: 2652px) {
   .topnav a {
-    font-family: 'Shadows Into Light', cursive;
+    font-family: "Shadows Into Light", cursive;
     float: left;
     display: block;
     color: white;
     text-align: center;
+
     padding: 14px 16px;
     text-decoration: none;
     font-size: 60px;
     letter-spacing: 2px;
   }
-  .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 
   .topnav.responsive {
     position: relative;
@@ -191,44 +181,22 @@ body {
     font-size: 110px;
     font-family: "Kalam", cursive;
   }
-
-  .button {
-    left: 130px;
-    top: 770px;
-    border-radius: 4px;
-    background-color: #f4511e;
-    border: none;
-    color: #ffffff;
-    text-align: center;
-    font-size: 48px;
-    padding: 20px;
-    width: 25%;
-    transition: all 0.5s;
-    cursor: -webkit-grab;
-    margin: 5px;
-  }
-  .button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    top: 70%;
-    transition: 0.5s;
-  }
-  .button span:after {
-    content: "\00bb";
-    position: absolute;
+  .middle{
+    transition: .5s ease;
     opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
   }
-  .button:hover span {
-    padding-right: 25px;
+  .footer>figure:hover{
+    transform: scale(1.1);
   }
-  .button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
+  
+
+
   .footer a {
     flex: calc(100 / 13);
     max-width: 45%;
@@ -237,24 +205,24 @@ body {
     flex: 30%;
     color: white;
     font-size: 40px;
-    margin:0;
+    margin: 0;
     letter-spacing: 2px;
-    max-width: 50%;
-    font-family: 'Shadows Into Light', cursive;
+    max-width: 100%;
+    font-family: "Shadows Into Light", cursive;
   }
   .figure figure {
     flex: calc(90 / 3);
     max-width: 30%;
   }
-  .heading{
-    width:100%;
-    height:10%;
+  .heading {
+    width: 100%;
+    height: 10%;
     color: orangered;
     letter-spacing: 10px;
     margin: 0;
     font-size: 80px;
     text-align: center;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: "Shadows Into Light", cursive;
     background-color: white;
   }
 
@@ -266,6 +234,35 @@ body {
   .imageSize:hover {
     transform: scale(1.1);
   }
+
+  .FixingtextboxSize {
+    width: 32%;
+  }
+  .textboxSize {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .imagesCulture{
+    width: 1240px;
+    height: 1240px;
+  }
+  .detailAdding:hover{
+    transform: scale(1.1);
+
+  }
+  .text{
+    width:100%;
+    text-align: center;
+    height:5%;
+    font-size: 62px;
+    font-family: "Shadows Into Light", cursive;
+    letter-spacing: 2px;
+    
+    padding:0;
+  }
+  
 }
 
 /* 4k display */
@@ -280,14 +277,14 @@ body {
     font-size: 57px;
   }
 
-  .heading{
-    width:100%;
-    height:10%;
+  .heading {
+    width: 100%;
+    height: 10%;
     color: orangered;
     letter-spacing: 10px;
     margin: 0;
     text-align: center;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: "Shadows Into Light", cursive;
     background-color: white;
   }
 
@@ -299,6 +296,10 @@ body {
     font-size: 100px;
     font-family: "Kalam", cursive;
   }
+  .imagesCulture{
+    width: 1200px;
+    height: 1200px;
+  }
   .imageSize {
     width: 560px;
     height: 560px;
@@ -307,10 +308,18 @@ body {
   .imageSize:hover {
     transform: scale(1.1);
   }
-  .textboxSize{
+  .FixingtextboxSize {
+    width: 32%;
+  }
+  .textboxSize {
+    list-style: none;
     padding: 0;
     margin: 0;
-    width:100%;
+    width: 100%;
+  }
+  .imagesCulture{
+    width: 1200px;
+    height: 1200px;
   }
 }
 /* large Laptop size */
@@ -324,15 +333,15 @@ body {
     text-decoration: none;
     font-size: 20px;
   }
-  .heading{
-    width:100%;
-    height:10%;
+  .heading {
+    width: 100%;
+    height: 10%;
     color: orangered;
     letter-spacing: 10px;
     margin: 0;
     font-size: 40px;
     text-align: center;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: "Shadows Into Light", cursive;
     background-color: white;
   }
 
@@ -352,9 +361,34 @@ body {
   .imageSize:hover {
     transform: scale(1.1);
   }
+  .FixingtextboxSize {
+    width: 31%;
+  }
+  .textboxSize {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .footer li {
+    flex: 30%;
+    color: white;
+    font-size: 27px;
+    margin: 0;
+    letter-spacing: 2px;
+    max-width: 100%;
+    font-family: "Shadows Into Light", cursive;
+  }
+  .imagesCulture{
+    width: 595px;
+    height: 640px;
+  }
+
 }
+
 /* laptop display medium */
 @media only screen and (max-width: 1024px) {
+ 
   .topnav a {
     float: left;
     display: block;
@@ -364,15 +398,15 @@ body {
     text-decoration: none;
     font-size: 20px;
   }
-  .heading{
-    width:100%;
-    height:10%;
+  .heading {
+    width: 100%;
+    height: 10%;
     color: orangered;
     letter-spacing: 10px;
     margin: 0;
     font-size: 40px;
     text-align: center;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: "Shadows Into Light", cursive;
     background-color: white;
   }
 
@@ -396,6 +430,28 @@ body {
   .imageSize:hover {
     transform: scale(1.1);
     border: "10";
+  }
+  .FixingtextboxSize {
+    width: 30%;
+  }
+  .textboxSize {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .footer li {
+    flex: 30%;
+    color: white;
+    font-size: 23px;
+    margin: 0;
+    letter-spacing: 2px;
+    max-width: 100%;
+    font-family: "Shadows Into Light", cursive;
+  }
+  .imagesCulture{
+    width: 432px;
+    height: 432px;
   }
 }
 
@@ -422,7 +478,7 @@ body {
     display: block;
     text-align: left;
   }
-  .faPosition{
+  .faPosition {
     position: fixed;
     left: 700px;
     padding: 0;
@@ -447,6 +503,28 @@ body {
 
   .imageSize:hover {
     transform: scale(1.1);
+  }
+  .FixingtextboxSize {
+    width: 29%;
+  }
+  .textboxSize {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .footer li {
+    flex: 30%;
+    color: white;
+    font-size: 16px;
+    margin: 0;
+    letter-spacing: 2px;
+    max-width: 100%;
+    font-family: "Shadows Into Light", cursive;
+  }
+  .imagesCulture{
+    width: 700px;
+    height: 700px;
   }
 }
 /* large mobile display */
@@ -481,7 +559,7 @@ body {
     font-size: 30px;
     font-family: "Kalam", cursive;
   }
-  .faPosition{
+  .faPosition {
     position: fixed;
     left: 350px;
     padding: 0;
@@ -498,6 +576,28 @@ body {
 
   .imageSize:hover {
     transform: scale(1.1);
+  }
+  .FixingtextboxSize {
+    width: 100%;
+  }
+  .textboxSize {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .footer li {
+    flex: 30%;
+    color: white;
+    font-size: 23px;
+    margin: 0;
+    letter-spacing: 2px;
+    max-width: 100%;
+    font-family: "Shadows Into Light", cursive;
+  }
+  .imagesCulture{
+    width: 360px;
+    height: 250px;
   }
 }
 
@@ -524,15 +624,15 @@ body {
     display: block;
     text-align: left;
   }
-  .heading{
-    width:100%;
-    height:10%;
+  .heading {
+    width: 100%;
+    height: 10%;
     color: orangered;
     letter-spacing: 10px;
     margin: 0;
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: "Shadows Into Light", cursive;
     background-color: white;
   }
 
@@ -544,7 +644,7 @@ body {
     font-size: 30px;
     font-family: "Kalam", cursive;
   }
-  .faPosition{
+  .faPosition {
     position: fixed;
     left: 310px;
     padding: 0;
@@ -556,12 +656,34 @@ body {
     max-width: 36%;
   }
   .imageSize {
-    width: 300px;
-    height: 300px;
+    width: 310px;
+    height: 310px;
   }
 
   .imageSize:hover {
     transform: scale(1.1);
+  }
+  .FixingtextboxSize {
+    width: 100%;
+  }
+  .textboxSize {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .footer li {
+    flex: 30%;
+    color: white;
+    font-size: 23px;
+    margin: 0;
+    letter-spacing: 2px;
+    max-width: 100%;
+    font-family: "Shadows Into Light", cursive;
+  }
+  .imagesCulture{
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -574,12 +696,12 @@ body {
     float: right;
     display: block;
   }
-.faPosition{
-  position: fixed;
-  left: 250px;
-  padding: 0;
-  margin: 0;
-}
+  .faPosition {
+    position: fixed;
+    left: 250px;
+    padding: 0;
+    margin: 0;
+  }
 
   .topnav.responsive {
     position: relative;
@@ -616,15 +738,37 @@ body {
   .imageSize:hover {
     transform: scale(1.1);
   }
-  .heading{
-    width:100%;
-    height:10%;
+  .heading {
+    width: 100%;
+    height: 15%;
     color: orangered;
-    letter-spacing: 10px;
+    letter-spacing: 15px;
     margin: 0;
     font-size: 27px;
     text-align: center;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: "Shadows Into Light", cursive;
     background-color: white;
+  }
+  .FixingtextboxSize {
+    width: 100%;
+  }
+  .textboxSize {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .footer li {
+    flex: 30%;
+    color: white;
+    font-size: 23px;
+    margin: 0;
+    letter-spacing: 2px;
+    max-width: 100%;
+    font-family: "Shadows Into Light", cursive;
+  }
+  .imagesCulture{
+    width: 250px;
+    height: 250px;
   }
 }
