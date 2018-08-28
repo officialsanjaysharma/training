@@ -8,7 +8,7 @@ body {
 }
 
 
-.footer {
+.flex {
   /* Common css for flex */
   display: flex;
   flex-direction: row;
@@ -143,11 +143,15 @@ body {
   float: right;
 }
 
+.underheroSection{
+  width:100%; 
+  height:100%;
+}
 
 /* 4k+ display */
 @media only screen and (max-width: 2652px) {
   .topnav a {
-    font-family: "Shadows Into Light", cursive;
+    font-family: 'Nunito Sans', sans-serif;
     float: left;
     display: block;
     color: white;
@@ -179,7 +183,7 @@ body {
     top: 43%;
     color: white;
     font-size: 110px;
-    font-family: "Kalam", cursive;
+    font-family: 'Nunito Sans', sans-serif;
   }
   .middle{
     transition: .5s ease;
@@ -191,24 +195,24 @@ body {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
-  .footer>figure:hover{
+  .flex>figure:hover{
     transform: scale(1.1);
   }
   
 
 
-  .footer a {
+  .flex a {
     flex: calc(100 / 13);
     max-width: 45%;
   }
-  .footer li {
+  .flex li {
     flex: 30%;
     color: white;
     font-size: 40px;
     margin: 0;
     letter-spacing: 2px;
     max-width: 100%;
-    font-family: "Shadows Into Light", cursive;
+    font-family: 'Nunito Sans', sans-serif;
   }
   .figure figure {
     flex: calc(90 / 3);
@@ -222,7 +226,7 @@ body {
     margin: 0;
     font-size: 80px;
     text-align: center;
-    font-family: "Shadows Into Light", cursive;
+    font-family: 'Nunito Sans', sans-serif;
     background-color: white;
   }
 
@@ -256,11 +260,19 @@ body {
     width:100%;
     text-align: center;
     height:5%;
+    color: white;
     font-size: 62px;
-    font-family: "Shadows Into Light", cursive;
+    font-family: 'Nunito Sans', sans-serif;
     letter-spacing: 2px;
     
     padding:0;
+  }
+  .copyrightStyle{
+    width:100%;
+    background-color:black;
+    font-family: 'Nunito Sans', sans-serif;
+    color:white;
+    font-size: 30px;
   }
   
 }
@@ -284,9 +296,10 @@ body {
     letter-spacing: 10px;
     margin: 0;
     text-align: center;
-    font-family: "Shadows Into Light", cursive;
+    font-family:'Nunito Sans', sans-serif;
     background-color: white;
   }
+  
 
   .heroText {
     position: absolute;
@@ -294,7 +307,7 @@ body {
     top: 43%;
     color: white;
     font-size: 100px;
-    font-family: "Kalam", cursive;
+    font-family: 'Nunito Sans', sans-serif;
   }
   .imagesCulture{
     width: 1200px;
@@ -321,6 +334,13 @@ body {
     width: 1200px;
     height: 1200px;
   }
+  .copyrightStyle{
+    width:100%;
+    background-color:black;
+    font-family: 'Nunito Sans', sans-serif;
+    color:white;
+    font-size: 30px;
+  }
 }
 /* large Laptop size */
 @media only screen and (max-width: 1440px) {
@@ -341,17 +361,17 @@ body {
     margin: 0;
     font-size: 40px;
     text-align: center;
-    font-family: "Shadows Into Light", cursive;
+    font-family: 'Nunito Sans', sans-serif;
     background-color: white;
   }
 
   .heroText {
     position: absolute;
-    left: 41%;
+    left: 40%;
     top: 43%;
     color: white;
     font-size: 55px;
-    font-family: "Kalam", cursive;
+    font-family: 'Nunito Sans', sans-serif;
   }
   .imageSize {
     width: 255px;
@@ -370,18 +390,25 @@ body {
     margin: 0;
     width: 100%;
   }
-  .footer li {
+  .flex li {
     flex: 30%;
     color: white;
     font-size: 27px;
     margin: 0;
     letter-spacing: 2px;
     max-width: 100%;
-    font-family: "Shadows Into Light", cursive;
+    font-family: 'Nunito Sans', sans-serif;
   }
   .imagesCulture{
     width: 595px;
     height: 640px;
+  }
+  .copyrightStyle{
+    width:100%;
+    background-color:black;
+    font-family: 'Nunito Sans', sans-serif;
+    color:white;
+    font-size: 35px;
   }
 
 }
@@ -406,7 +433,7 @@ body {
     margin: 0;
     font-size: 40px;
     text-align: center;
-    font-family: "Shadows Into Light", cursive;
+    font-family: 'Nunito Sans', sans-serif;
     background-color: white;
   }
 
@@ -416,9 +443,9 @@ body {
     top: 43%;
     color: white;
     font-size: 40px;
-    font-family: "Kalam", cursive;
+    font-family: 'Nunito Sans', sans-serif;
   }
-  .footer a {
+  .flex a {
     flex: 20%;
     max-width: 45%;
   }
@@ -440,14 +467,14 @@ body {
     margin: 0;
     width: 100%;
   }
-  .footer li {
+  .flex li {
     flex: 30%;
     color: white;
     font-size: 23px;
     margin: 0;
     letter-spacing: 2px;
     max-width: 100%;
-    font-family: "Shadows Into Light", cursive;
+    font-family: 'Nunito Sans', sans-serif;
   }
   .imagesCulture{
     width: 432px;
@@ -490,9 +517,9 @@ body {
     top: 43%;
     color: white;
     font-size: 30px;
-    font-family: "Kalam", cursive;
+    font-family: 'Nunito Sans', sans-serif;
   }
-  .footer a {
+  .flex a {
     flex: 20%;
     max-width: 44%;
   }
@@ -513,14 +540,14 @@ body {
     margin: 0;
     width: 100%;
   }
-  .footer li {
+  .flex li {
     flex: 30%;
     color: white;
     font-size: 16px;
     margin: 0;
     letter-spacing: 2px;
     max-width: 100%;
-    font-family: "Shadows Into Light", cursive;
+    font-family: 'Nunito Sans', sans-serif;
   }
   .imagesCulture{
     width: 700px;
@@ -557,7 +584,7 @@ body {
     top: 43%;
     color: white;
     font-size: 30px;
-    font-family: "Kalam", cursive;
+    font-family: 'Nunito Sans', sans-serif;
   }
   .faPosition {
     position: fixed;
@@ -565,7 +592,18 @@ body {
     padding: 0;
     margin: 0;
   }
-  .footer a {
+  .heading {
+    width: 100%;
+    height: 8%;
+    color: orangered;
+    letter-spacing: 10px;
+    margin: 0;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: white;
+  }
+  .flex a {
     flex: 50%;
     max-width: 38%;
   }
@@ -586,14 +624,14 @@ body {
     margin: 0;
     width: 100%;
   }
-  .footer li {
+  .flex li {
     flex: 30%;
     color: white;
     font-size: 23px;
     margin: 0;
     letter-spacing: 2px;
     max-width: 100%;
-    font-family: "Shadows Into Light", cursive;
+    font-family: 'Nunito Sans', sans-serif;
   }
   .imagesCulture{
     width: 360px;
@@ -626,13 +664,13 @@ body {
   }
   .heading {
     width: 100%;
-    height: 10%;
+    height: 8%;
     color: orangered;
     letter-spacing: 10px;
     margin: 0;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
-    font-family: "Shadows Into Light", cursive;
+    font-family: 'Nunito Sans', sans-serif;
     background-color: white;
   }
 
@@ -642,7 +680,7 @@ body {
     top: 43%;
     color: white;
     font-size: 30px;
-    font-family: "Kalam", cursive;
+    font-family: 'Nunito Sans', sans-serif;
   }
   .faPosition {
     position: fixed;
@@ -651,7 +689,7 @@ body {
     margin: 0;
   }
 
-  .footer a {
+  .flex a {
     flex: 50%;
     max-width: 36%;
   }
@@ -672,14 +710,14 @@ body {
     margin: 0;
     width: 100%;
   }
-  .footer li {
+  .flex li {
     flex: 30%;
     color: white;
     font-size: 23px;
     margin: 0;
     letter-spacing: 2px;
     max-width: 100%;
-    font-family: "Shadows Into Light", cursive;
+    font-family: 'Nunito Sans', sans-serif;
   }
   .imagesCulture{
     width: 300px;
@@ -723,10 +761,10 @@ body {
     top: 43%;
     color: white;
     font-size: 30px;
-    font-family: "Kalam", cursive;
+    font-family: 'Nunito Sans', sans-serif;
   }
 
-  .footer a {
+  .flex a {
     flex: 50%;
     max-width: 33%;
   }
@@ -746,7 +784,7 @@ body {
     margin: 0;
     font-size: 27px;
     text-align: center;
-    font-family: "Shadows Into Light", cursive;
+    font-family: 'Nunito Sans', sans-serif;
     background-color: white;
   }
   .FixingtextboxSize {
@@ -758,14 +796,14 @@ body {
     margin: 0;
     width: 100%;
   }
-  .footer li {
+  .flex li {
     flex: 30%;
     color: white;
     font-size: 23px;
     margin: 0;
     letter-spacing: 2px;
     max-width: 100%;
-    font-family: "Shadows Into Light", cursive;
+    font-family: 'Nunito Sans', sans-serif;
   }
   .imagesCulture{
     width: 250px;
