@@ -123,7 +123,7 @@ body {
 .heroImage {
   /* Hero Image Style */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/taj-mahal-wallpapers-41.jpg");
+    url("../images/taj-mahal-wallpapers-41.jpg");
   height: 100%;
   width: 100%;
   background-position: center;
