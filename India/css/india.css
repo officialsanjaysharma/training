@@ -207,6 +207,7 @@ body {
   }
   .flex li {
     flex: 30%;
+    float:none;
     color: white;
     font-size: 40px;
     margin: 0;
@@ -244,6 +245,7 @@ body {
   }
   .textboxSize {
     list-style: none;
+    letter-spacing: 2px;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -340,6 +342,16 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     color:white;
     font-size: 30px;
+  }
+  .flex li {
+    flex: 30%;
+    float:none;
+    color: white;
+    font-size: 38px;
+    margin: 0;
+    letter-spacing: 2px;
+    max-width: 100%;
+    font-family: 'Nunito Sans', sans-serif;
   }
 }
 /* large Laptop size */
@@ -470,9 +482,10 @@ body {
   .flex li {
     flex: 30%;
     color: white;
-    font-size: 23px;
+    float:none;
+    font-size: 20px;
     margin: 0;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     max-width: 100%;
     font-family: 'Nunito Sans', sans-serif;
   }
@@ -541,9 +554,9 @@ body {
     width: 100%;
   }
   .flex li {
-    flex: 30%;
+    flex: 40%;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     margin: 0;
     letter-spacing: 2px;
     max-width: 100%;
@@ -626,6 +639,7 @@ body {
   }
   .flex li {
     flex: 30%;
+    float:none;
     color: white;
     font-size: 23px;
     margin: 0;
