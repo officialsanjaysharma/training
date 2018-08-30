@@ -9,6 +9,12 @@ body {
 .backgroundFooter{
 background-color:black;
 }
+.navstyle{
+position:fixed;
+background-color:#232323; 
+width:100%;
+opacity: 0.5;
+}
 
 .flex {
   /* Common css for flex */
