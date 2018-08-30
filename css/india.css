@@ -45,7 +45,7 @@ opacity: 0.5;
   /* Social Media icons common style */
   padding: 23px;
   display: flex;
-  flex: wrap;
+  flex-wrap: wrap;
   font-size: 30px;
   width: 50px;
   text-align: center;
@@ -500,7 +500,6 @@ color:orangered;
 
   .imageSize:hover {
     transform: scale(1.1);
-    border: "10";
   }
   .FixingtextboxSize {
     width: 30%;
