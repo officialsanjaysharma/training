@@ -8,8 +8,8 @@
   <link rel="icon" href="images/armyFlag.gif  " type="image/gif" sizes="16x16">
   <title>Indian Army</title>
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--scss file  -->
 
@@ -28,16 +28,16 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#main-nav">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" id="scrollButton" href="#header">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#main">Important Personals</a>
+          <a class="nav-link" id="scrollButton" href="#main">Important personnel</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#forcesTypes">Forces</a>
+          <a class="nav-link" id="scrollButton" href="#forcesTypes">Forces</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link" id="scrollButton" href="#personnel">Personnel</a>
         </li>
       </ul>
     </div>
@@ -65,9 +65,9 @@
     </div>
   </div>
   <!-- End section header -->
-  <main id="main">
+  <main>
     <!-- Card -->
-    <h1 class="positionHeading">Important Personals</h1>
+    <h1 id="main" class="positionHeading">Important personnel</h1>
     <div class="card testimonial-card position">
 
       <!-- Bacground color -->
@@ -76,7 +76,7 @@
 
       <!-- Avatar -->
       <div class="avatar mx-auto white">
-        <img src="./images/armygernal.jpeg" class="rounded-circle imagesize">
+        <img src="./images/armygernal.jpeg" alt="Gernal Bipin Rawat" class="rounded-circle imagesize">
       </div>
 
       <div class="card-body">
@@ -101,7 +101,8 @@
       </div>
 
       <!-- Avatar -->
-      <div class="avatar mx-auto white"><img src="images/400px-Ram_Nath_Kovind_official_portrait.jpg" class="rounded-circle imagesize">
+      <div class="avatar mx-auto white"><img src="images/400px-Ram_Nath_Kovind_official_portrait.jpg" alt="President Ram Nath Kovind"
+          class="rounded-circle imagesize">
       </div>
 
       <div class="card-body">
@@ -128,7 +129,7 @@
       </div>
 
       <!-- Avatar -->
-      <div class="avatar mx-auto white"><img src="images/Sita-Raman-Defence-minister.jpg" class="rounded-circle imagesize">
+      <div class="avatar mx-auto white"><img src="images/Sita-Raman-Defence-minister.jpeg" alt="Nirmala Sitharaman" class="rounded-circle imagesize">
       </div>
 
       <div class="card-body">
@@ -148,304 +149,492 @@
     <!-- Card -->
     <!-- Card group -->
     <h1 id="forcesTypes" class="positionHeading">Indian Army Forces</h1>
-<div  class="card-group">
-  
+    <div class="card-group">
 
-    <!-- Card -->
-    <div class="card mb-4">
-      
-      <!-- Card image -->
-      <div class="view overlay">
-        <img class="card-img-top imagesizeCards" src="images/macros.jpeg" alt="Card image cap">
-        <a href="#!">
-          <div class="mask rgba-white-slight"></div>
-        </a>
+
+      <!-- Card -->
+      <div class="card mb-4">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top imagesizeCards" src="images/macros.jpeg" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <!-- Title -->
+          <h4 class="card-title"> MARCOS</h4>
+          <!-- Text -->
+          <p class="card-text">MARCOS (Marine Commandos), is a special forces unit that was raised by the Indian Navy in
+            1987 for direct action, special reconnaissance, amphibious warfare and counter-terrorism.</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#macros">Read more</button>
+         
+
+          <!-- Modal -->
+          <div class="modal fade" id="macros" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Macros</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  MARCOS (Marine Commandos), is a special forces unit that was raised by the Indian Navy in 1987 for direct action, special reconnaissance, amphibious warfare and counter-terrorism.
+                  The training of MARCOS is probably the most stringent in the world with the commandos being tested for physical and mental toughness.
+                  Called as the "Dadiwala fauj" , meaning the "bearded army" by terrorists because of their bearded disguise in civil areas, MARCOS are capable of operations in any kind of terrain, but specialise primarily in maritime operations.
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card content -->
+
       </div>
-  
-      <!-- Card content -->
-      <div class="card-body">
-  
-        <!-- Title -->
-        <h4 class="card-title"> MARCOS</h4>
-        <!-- Text -->
-        <p class="card-text">MARCOS (Marine Commandos), is a special forces unit that was raised by 
-          the Indian Navy in 1987 for direct action, special reconnaissance, amphibious warfare and counter-terrorism.</p>
-        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-primary btn-md">Read more</button>
-  
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card mb-4">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top imagesizeCards" src="images/paraCommando.jpg" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+          <!-- Title -->
+          <h4 class="card-title"> Para Commandos</h4>
+          <!-- Text -->
+          <p class="card-text">Formed in 1966, the Para Commandos are part of the highly-trained Parachute Regiment of the
+            Indian Army and are the largest part of the Special Forces of India. </p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#paraCommando">Read more</button>
+
+        </div>
+        <!-- Card content -->
+        <!-- Modal -->
+        <div class="modal fade" id="paraCommando" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Para Commando</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Formed in 1966, the Para Commandos are part of the highly-trained Parachute Regiment of the Indian Army and are the largest part of the Special Forces of India. The parachute units of the Indian Army are among the oldest airborne units in the world.
+                The main aim of a Parachute Regiment is quick deployment of soldiers behind enemy lines to attack the enemy from behind and destroy their first line of defence.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <!-- Card content -->
-  
-    </div>
-    <!-- Card -->
-  
-    <!-- Card -->
-    <div class="card mb-4">
-  
-      <!-- Card image -->
-      <div class="view overlay">
-        <img class="card-img-top imagesizeCards" src="images/paraCommando.jpg" alt="Card image cap">
-        <a href="#!">
-          <div class="mask rgba-white-slight"></div>
-        </a>
-      </div>
-  
-      <!-- Card content -->
-      <div class="card-body">
-        <!-- Title -->
-        <h4 class="card-title"> Para Commandos</h4>
-        <!-- Text -->
-        <p class="card-text">Formed in 1966, the Para Commandos are part of the highly-trained Parachute 
-          Regiment of the Indian Army and are the largest part of the Special Forces of India. </p>
-        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-primary btn-md">Read more</button>
-  
-      </div>
-      <!-- Card content -->
-  
-    </div>
-    <!-- Card -->
-  
-    <!-- Card -->
-    <div class="card mb-4">
-  
-      <!-- Card image -->
-      <div class="view overlay">
-        <img class="card-img-top imagesizeCards" src="images/ghatakForce.jpg" alt="Card image cap">
-        <a href="#!">
-          <div class="mask rgba-white-slight"></div>
-        </a>
-      </div>
-  
-      <!-- Card content -->
-      <div class="card-body">
-  
-        <!-- Title -->
-        <h4 class="card-title">Ghatak Force</h4>
-        <!-- Text -->
-        <p class="card-text">True to its name ghatak.
-           Every infantry battalion in the Indian Army has one platoon and only
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card mb-4">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top imagesizeCards" src="images/ghatakForce.jpg" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <!-- Title -->
+          <h4 class="card-title">Ghatak Force</h4>
+          <!-- Text -->
+          <p class="card-text">True to its name ghatak. Every infantry battalion in the Indian Army has one platoon and only
             the most physically fit and motivated soldiers make it to the Ghatak Platoon.</p>
-        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-primary btn-md">Read more</button>
-  
-      </div>
-      <!-- Card content -->
-  
-    </div>
-    <!-- Card -->
-  
-  </div>
-  <!-- Card group -->
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-primary btn-md"  data-toggle="modal" data-target="#ghatakForce">Read more</button>
 
-  
-
-  <!-- Card group -->
-<div class="card-group">
-
-    <!-- Card -->
-    <div class="card mb-4">
-  
-      <!-- Card image -->
-      <div class="view overlay">
-        <img class="card-img-top imagesizeCards" src="images/COBRA_COMMANDO-edited.jpg" alt="Card image cap">
-        <a href="#!">
-          <div class="mask rgba-white-slight"></div>
-        </a>
-      </div>
-  
-      <!-- Card content -->
-      <div class="card-body">
-  
-        <!-- Title -->
-        <h4 class="card-title">COBRA </h4>
-        <!-- Text -->
-        <p class="card-text">COBRA (Commando Battalion for Resolute Action) is a specialised unit of the CRPF 
-          (Central Reserve Police Force) that was formed to counter Naxalism in India.</p>
-        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-primary btn-md">Read more</button>
-  
-      </div>
-      <!-- Card content -->
-  
-    </div>
-    <!-- Card -->
-  
-    <!-- Card -->
-    <div class="card mb-4">
-  
-      <!-- Card image -->
-      <div class="view overlay">
-        <img class="card-img-top imagesizeCards" src="images/FORCE1.jpg" alt="Card image cap">
-        <a href="#!">
-          <div class="mask rgba-white-slight"></div>
-        </a>
-      </div>
-  
-      <!-- Card content -->
-      <div class="card-body">
-        <!-- Title -->
-        <h4 class="card-title"> Force One</h4>
-        <!-- Text -->
-        <p class="card-text">Force One came into being in the year 2010 after the deadly 26/11 terrorist strikes in Mumbai.
-           The prime role of this special elite force is to protect the city of Mumbai from terrorist attacks.</p>
-        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-primary btn-md">Read more</button>
-  
-      </div>
-      <!-- Card content -->
-  
-    </div>
-    <!-- Card -->
-  
-    <!-- Card -->
-    <div class="card mb-4">
-  
-      <!-- Card image -->
-      <div class="view overlay">
-        <img class="card-img-top imagesizeCards" src="images/Indian-Special-Frontier-Force-Bhavanajagat.jpg" alt="Card image cap">
-        <a href="#!">
-          <div class="mask rgba-white-slight"></div>
-        </a>
-      </div>
-  
-      <!-- Card content -->
-      <div class="card-body">
-  
-        <!-- Title -->
-        <h4 class="card-title">Special Frontier Force</h4>
-        <!-- Text -->
-        <p class="card-text">Raised in the aftermath of the 1962 Sino-Indian war as a special force for covert operations behind Chinese lines in the event of another war with China.</p>
-        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-primary btn-md">Read more</button>
-  
-      </div>
-      <!-- Card content -->
-  
-    </div>
-    <!-- Card -->
-  
-  </div>
-  <!-- Card group -->
-
-  <!-- Card group -->
-<div class="card-group">
-
-    <!-- Card -->
-    <div class="card mb-4">
-  
-      <!-- Card image -->
-      <div class="view overlay">
-        <img class="card-img-top imagesizeCards" src="images/nsg1.jpg" alt="Card image cap">
-        <a href="#!">
-          <div class="mask rgba-white-slight"></div>
-        </a>
-      </div>
-  
-      <!-- Card content -->
-      <div class="card-body">
-  
-        <!-- Title -->
-        <h4 class="card-title">National Security Guard</h4>
-        <!-- Text -->
-        <p class="card-text">The National Security Guard is India's premier counter-terrorist force.
-          The NSG provides security to VIPs and is responsible for neutralising terrorist threats to vital installations.</p>
-        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-primary btn-md">Read more</button>
-  
-      </div>
-      <!-- Card content -->
-  
-    </div>
-    <!-- Card -->
-  
-    <!-- Card -->
-    <div class="card mb-4">
-  
-      <!-- Card image -->
-      <div class="view overlay">
-        <img class="card-img-top imagesizeCards" src="images/GarudCommandoForce.jpg" alt="Card image cap">
-        <a href="#!">
-          <div class="mask rgba-white-slight"></div>
-        </a>
-      </div>
-  
-      <!-- Card content -->
-      <div class="card-body">
-        <!-- Title -->
-        <h4 class="card-title">Garud Commando Force</h4>
-        <!-- Text -->
-        <p class="card-text">Formed in 2004, the Garud Commando Force is the special forces unit of the Indian Air Force.
-           The training for being a Garud is the longest among all the Indian Special Forces. </p>
-        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-primary btn-md">Read more</button>
-  
-      </div>
-      <!-- Card content -->
-  
-    </div>
-    <!-- Card -->
-  
-    <!-- Card -->
-    <div class="card mb-4">
-  
-      <!-- Card image -->
-      <div class="view overlay">
-        <img class="card-img-top imagesizeCards" src="images/spg2.jpg" alt="Card image cap">
-        <a href="#!">
-          <div class="mask rgba-white-slight"></div>
-        </a>
-      </div>
-  
-      <!-- Card content -->
-      <div class="card-body">
-  
-        <!-- Title -->
-        <h4 class="card-title">The  Special Protection Group</h4>
-        <!-- Text -->
-        <p class="card-text">The Special Protection Group is a security force of the Government of India that is responsible for the protection of the Prime Minister of India,the Former Prime Ministers.</p>
-        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-        <button type="button" class="btn btn-primary btn-md">Read more</button>
-  
-      </div>
-      <!-- Card content -->
-  
-    </div>
-    <!-- Card -->
-  
-  </div>
-  <!-- Card group -->
-
-  <div class="container ">
-    <div class="row ">
-      <div class="col-md-6 ">
-          <h2 class="positionHeading">Active Personnel</h2>
-              <div class="progress blue">
-                  <span class="progress-left">
-                      <span class="progress-bar"></span>
-                  </span>
-                  <span class="progress-right">
-                      <span class="progress-bar"></span>
-                  </span>
-                  <div class="progress-value">1,237,117</div>
+        </div>
+        <!-- Card content -->
+        <!-- Modal -->
+        <div class="modal fade" id="ghatakForce" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Ghatak Force</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
-          </div>
-
-          <div class="col-md-6 ">
-            <h2 class="positionHeading">Reserve Personnel</h2>
-              <div class="progress yellow">
-                  <span class="progress-left">
-                      <span class="progress-bar"></span>
-                  </span>
-                  <span class="progress-right">
-                      <span class="progress-bar"></span>
-                  </span>
-                  <div class="progress-value">960,000</div>
+              <div class="modal-body">
+                True to its name ghatak (which means 'killer' in Hindi), this infantry platoon goes for the kill and spearheads strikes ahead of a battalion. Every infantry battalion in the Indian Army has one platoon and only the most physically fit and motivated soldiers make it to the Ghatak Platoon.
+                The Ghatak soldiers are well-trained, superiorly-armed and equipped to handle situations like terror strikes, hostage situations and counter insurgency operations.
               </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
           </div>
+        </div>
+
       </div>
-  </div>
-</main>
+      <!-- Card -->
+
+    </div>
+    <!-- Card group -->
+
+
+
+    <!-- Card group -->
+    <div class="card-group">
+
+      <!-- Card -->
+      <div class="card mb-4">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top imagesizeCards" src="images/COBRA_COMMANDO-edited.jpg" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <!-- Title -->
+          <h4 class="card-title">COBRA </h4>
+          <!-- Text -->
+          <p class="card-text">COBRA (Commando Battalion for Resolute Action) is a specialised unit of the CRPF (Central
+            Reserve Police Force) that was formed to counter Naxalism in India.</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Cobra">Read more</button>
+
+        </div>
+        <!-- Card content -->
+        <div class="modal fade" id="Cobra" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Cobra</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                COBRA (Commando Battalion for Resolute Action) is a specialised unit of the CRPF (Central Reserve Police Force) that was formed to counter Naxalism in India. It's one of the few Indian special forces, that's exclusively trained in guerrilla warfare.
+                Since its inception in 2008, it has successfully wiped out a number of Naxalite groups from India. Set up with a grant of Rs 13,000 million, it is one of the best-equipped paramilitary forces in India.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card mb-4">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top imagesizeCards" src="images/FORCE1.jpg" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+          <!-- Title -->
+          <h4 class="card-title"> Force One</h4>
+          <!-- Text -->
+          <p class="card-text">Force One came into being in the year 2010 after the deadly 26/11 terrorist strikes in Mumbai.
+            The prime role of this special elite force is to protect the city of Mumbai from terrorist attacks.</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#forceOne">Read more</button>
+
+        </div>
+        <!-- Card content -->
+        <div class="modal fade" id="forceOne" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Force One</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Force One came into being in the year 2010 after the deadly 26/11 terrorist strikes in Mumbai. The prime role of this special elite force is to protect the city of Mumbai from terrorist attacks.
+                This force boasts of the fastest response time in the world and responds to a terror strike in less than 15 minutes. Respect!
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card mb-4">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top imagesizeCards" src="images/Indian-Special-Frontier-Force-Bhavanajagat.jpg" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <!-- Title -->
+          <h4 class="card-title">Special Frontier Force</h4>
+          <!-- Text -->
+          <p class="card-text">Raised in the aftermath of the 1962 Sino-Indian war as a special force for covert operations
+            behind Chinese lines in the event of another war with China.</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#spf">Read more</button>
+
+        </div>
+        <!-- Card content -->
+        <!-- Modal -->
+        <div class="modal fade" id="spf" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle" data-toggle="modal" data-target="#spf">Special Frontier Force</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Raised in the aftermath of the 1962 Sino-Indian war as a special force for covert operations behind Chinese lines in the event of another war with China, it was never really used for its intended role and has mainly served as an elite special operations and counter-insurgency force.
+                This covert paramilitary special force operates under India's external intelligence agency RAW and reports directly to the Prime Minister via the Directorate General of Security in the Cabinet Secretariat. It’s so classified a set-up that even the army may not know what it’s up to.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" >Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Card -->
+
+    </div>
+    <!-- Card group -->
+
+    <!-- Card group -->
+    <div class="card-group">
+
+      <!-- Card -->
+      <div class="card mb-4">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top imagesizeCards" src="images/nsg1.jpg" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <!-- Title -->
+          <h4 class="card-title">National Security Guard</h4>
+          <!-- Text -->
+          <p class="card-text">The National Security Guard is India's premier counter-terrorist force. The NSG provides security
+            to VIPs and is responsible for neutralising terrorist threats to vital installations.</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#nsg">Read more</button>
+
+        </div>
+        <!-- Card content -->
+         <!-- Modal -->
+         <div class="modal fade" id="nsg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">National Security Guard</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                The National Security Guard is India's premier counter-terrorist force. The NSG provides security to VIPs, conducts anti-sabotage checks, and is responsible for neutralising terrorist threats to vital installations.
+                The selection process is so demanding that it has a drop out rate of about 70–80 percent. The 7500 personnel strong NSG is evenly divided between the Special Action Group (SAG) and the Special Rangers Group (SRG).
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card mb-4">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top imagesizeCards" src="images/GarudCommandoForce.jpg" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+          <!-- Title -->
+          <h4 class="card-title">Garud Commando Force</h4>
+          <!-- Text -->
+          <p class="card-text">Formed in 2004, the Garud Commando Force is the special forces unit of the Indian Air Force.
+            The training for being a Garud is the longest among all the Indian Special Forces. </p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#garudCommando">Read more</button>
+
+        </div>
+        <!-- Card content -->
+        <!-- Modal -->
+        <div class="modal fade" id="garudCommando" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Garud Commando Force</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Formed in 2004, the Garud Commando Force is the special forces unit of the Indian Air Force. The training for being a Garud is the longest among all the Indian Special Forces. The total duration of training before a trainee can qualify as a fully operational Garud is around 3 years. 
+                The youngest special force of the services, the Garud Commando Force is entrusted with the duty of protecting critical Air Force bases, carrying out rescue operation during calamities and other missions in support of air operations.
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="card mb-4">
+
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top imagesizeCards" src="images/spg2.jpg" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body">
+
+          <!-- Title -->
+          <h4 class="card-title">The Special Protection Group</h4>
+          <!-- Text -->
+          <p class="card-text">The Special Protection Group is a security force of the Government of India that is responsible
+            for the protection of the Prime Minister of India,the Former Prime Ministers.</p>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#spg">Read more</button>
+
+        </div>
+        <!-- Card content -->
+        <!-- Modal -->
+        <div class="modal fade" id="spg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">The Special Protection Group</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                The Special Protection Group is a security force of the Government of India that is responsible for the protection of the Prime Minister of India, the former Prime Ministers and members of their immediate family members.
+                They have to gather intelligence, assess threats and provide protection. Their track record has been impeccable after the Rajiv Gandhi assassination and no attacks have been carried out on any Prime Minister ever since.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Card -->
+
+
+    </div>
+    <!-- Card group -->
+
+    <!-- Progress -->
+    <div class="container ">
+      <div class="row ">
+        <div class="col-md-6 ">
+          <h2 id="personnel" class="positionHeading">Active Personnel</h2>
+          <div class="progress blue">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">1,237,117</div>
+          </div>
+        </div>
+
+        <div class="col-md-6 ">
+          <h2 class="positionHeading">Reserve Personnel</h2>
+          <div class="progress yellow">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">960,000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
   <!-- Footer -->
   <footer class="page-footer font-small indigo">
 
@@ -505,7 +694,9 @@
         <!-- Grid column -->
         <div class="col-md-8 col-12 mt-5">
           <p style="line-height: 1.7rem">This website give you a little glimpse about the Indian army.Who are the main personals
-            in the Army ,what operation army has worked on and what are current project it is working.
+            in the Army ,what operation army has worked on and what are current project it is working.You can also contribute
+            to this website by sharing it more and more and let it spread all across the globe and inspire people about the
+            great Indian Army.
           </p>
         </div>
         <!-- Grid column -->
